@@ -105,6 +105,33 @@
         .note {
             font-size: 0.75rem;
         }
+        
+        .details {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .detail-pair {
+            border: 1px solid #FFF6;
+            padding: 3px;
+            border-radius: 3px;
+
+            display: flex;
+            flex-direction: column;
+            flex: 1 0 20vmin;
+            gap: 0.5rem;
+            text-align: center;
+        }
+
+        .label {
+            border: 1px solid #FFF8;
+            padding: 3px 2px;
+            border-radius: 3px;
+            background-color: #AAA6;
+            font-weight: bold;
+        }
     </style>
 </head>
 
@@ -112,6 +139,20 @@
     <main>
         <img class="logo" src="https://orbit.tail7ab396.ts.net/horizon-breakers/logo.svg" />
         <img class="cover" src="https://orbit.tail7ab396.ts.net/horizon-breakers/cover.png" />
+        <div class="details">
+            <p class="detail-pair">
+                <span class="label">title</span>
+                <span>Horizon Breakers</span>
+            </p>
+            <p class="detail-pair">
+                <span class="label">genre</span>
+                <span>speculative fiction</span>
+            </p>
+            <p class="detail-pair">
+                <span class="label">status</span>
+                <span>advanced reader feedback</span>
+            </p>
+        </div>
         <details>
             <summary>
                 Summary
